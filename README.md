@@ -15,7 +15,7 @@ Este es un ejemplo simple de una aplicación Flutter que muestra cómo usar `Inh
 ## Demo
 <img src="https://github.com/user-attachments/assets/7e5be666-13fd-4910-9543-bc65bb2896e6" alt="InheritedWidget Example" width="300">
 
-## Cómo ejecutar el proyecto
+## ¿Cómo ejecutar el proyecto?
 
 1. Clona este repositorio:
      ```bash
