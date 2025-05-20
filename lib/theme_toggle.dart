@@ -11,6 +11,10 @@ class ThemeToggle extends InheritedWidget {
   final bool isDark;
   final VoidCallback changeTheme;
 
+  static ThemeToggle? maybeOf(BuildContext context) {
+    return context.dependOnInheritedWidgetOfExactType<ThemeToggle>();
+  }
+
   static ThemeToggle of(BuildContext context) {
     final result = context.dependOnInheritedWidgetOfExactType<ThemeToggle>();
     assert(result != null, 'No ThemeToggle found in context');
