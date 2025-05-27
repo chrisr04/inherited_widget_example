@@ -53,8 +53,8 @@ Usar `InheritedWidget` es una de las formas más básicas (y poderosas) de compa
 
 A continuación se mencionan algunos casos de uso en los que podriamos utilizar InheritedWidgets:
 
-- **Propagación de estado o datos globales:** Usado para compartir datos o configuraciones que deben estar disponibles para muchos widgets hijos sin necesidad de pasarlos manualmente a través de constructores. Por ejemplo, cuando usamos `Theme.of(context)` o `MediaQuery.of(context)`.
-- **Gestión de dependencias:** En muchas ocasiones los InheritedWidgets pueden ser usados para proveer clases que no necesariamente cambien muy seguido, este enfoque te puede permiter utilizarlo como inyector de dependencias para tu aplicación. Por ejemplo, cuando usamos `RepositoryProvider` de la librería `flutter_bloc` para inyectar el repositorio y obtenerlo luego a través del contexto al instanciar el Bloc que lo necesite.
+- **Propagación de estado o datos globales:** Los InheritedWidgets pueden ser usados para compartir datos o configuraciones que deben estar disponibles para muchos widgets hijos sin necesidad de pasarlos manualmente a través de constructores. Por ejemplo, cuando usamos `Theme.of(context)` para acceder al tema de la app o `MediaQuery.of(context)` para obtener las dimensiones de la pantalla.
+- **Gestión de dependencias:** En muchas ocasiones, los InheritedWidgets pueden ser usados para proveer clases que no cambian muy seguido. Este enfoque te puede permitir utilizarlo como inyector de dependencias para tu aplicación. Por ejemplo, cuando usamos `RepositoryProvider` de la librería `flutter_bloc` para inyectar el repositorio de la capa de datos, y luego obtenerlo a través del contexto al instanciar el Bloc que lo necesite.
 - **Optimización de renderizado:** Se puede utilizar para hacer que solo los widgets que realmente usan los datos proporcionados por el InheritedWidget se reconstruyan cuando esos datos cambian. De esta forma, evitamos reconstrucciones innecesarias de widgets dentro de la aplicación.
 
 ### Diagrama de la solución
